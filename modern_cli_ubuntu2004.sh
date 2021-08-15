@@ -3,7 +3,8 @@ sudo apt update
 # rg <- grep (Rust)
 # https://github.com/BurntSushi/ripgrep
 sudo apt install ripgrep -y
-sudo sed -i '/\/usr\/.crates2.json/d' /var/lib/dpkg/info/ripgrep.list  # solve conflict witch bat
+# solve conflict witch bat https://github.com/sharkdp/bat/issues/938
+sudo sed -i '/\/usr\/.crates2.json/d' /var/lib/dpkg/info/ripgrep.list
 echo 'alias grep=rg' >> ~/.bashrc 
 
 # bat <- cat (Rust)
