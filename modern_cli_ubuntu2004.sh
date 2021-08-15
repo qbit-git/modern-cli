@@ -44,14 +44,26 @@ echo 'alias find="fdfind -H"' >> ~/.bashrc
 # https://github.com/imsnif/bandwhich
 # maybe later
 
-# pipx
+# fzf (Go)
+# https://github.com/junegunn/fzf
+sudo apt install fzf
+echo 'source /usr/share/doc/fzf/examples/completion.bash' >> ~/.bashrc 
+echo 'source /usr/share/doc/fzf/examples/key-bindings.bash' >> ~/.bashrc 
+
+# pipx (Python)
 # https://github.com/pypa/pipx
 pip3 install pipx
 echo 'export PATH=$PATH:/home/ubuntu/.local/bin' >> ~/.bashrc 
 
-# tldr 
+# tldr (Python)
 # https://github.com/tldr-pages/tldr-python-client
 pipx install tldr
 tldr -u
+
+# glances <- top (Python)
+# https://github.com/nicolargo/glances
+pipx install glances
+mkdir .config/glances/
+cp .local/pipx/venvs/glances/share/doc/glances/glances.conf .config/glances/glances.conf
 
 source ~/.bashrc
