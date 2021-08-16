@@ -3,10 +3,7 @@
 ## rg <- grep (Rust)
 * https://github.com/BurntSushi/ripgrep
 
-# bat <- cat (Rust)
-# https://github.com/sharkdp/bat
-sudo apt install bat -y
-echo 'alias cat=batcat' >> ~/.bashrc 
+# [bat](https://github.com/sharkdp/bat) <- cat (Rust)
 
 # fd <- find (Rust)
 # https://github.com/sharkdp/fd
