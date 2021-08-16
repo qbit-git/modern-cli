@@ -1,9 +1,8 @@
 # Modern Alternatives of Command-Line Tools
 
-## rg <- grep (Rust)
-* https://github.com/BurntSushi/ripgrep
+* [rg](https://github.com/BurntSushi/ripgrep) <- grep (Rust)
 
-# [bat](https://github.com/sharkdp/bat) <- cat (Rust)
+## [bat](https://github.com/sharkdp/bat) <- cat (Rust)
 
 # fd <- find (Rust)
 # https://github.com/sharkdp/fd
